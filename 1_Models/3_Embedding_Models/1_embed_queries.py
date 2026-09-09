@@ -4,7 +4,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 load_dotenv()
 
 embedding = GoogleGenerativeAIEmbeddings(
-    model="models/gemini-embedding-001"
+    model="models/gemini-embedding-001",
+    Dimensions=32
 )
 
 query = "Tell me about Virat Kohli"
